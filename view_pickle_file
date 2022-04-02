@@ -1,0 +1,9 @@
+# Pickle file viewer 
+# eg: If you have pickled a dataframe, a simple way to view it would be to use the load() function
+
+import pickle 
+
+def view_meta_file(pkl_file):
+    with open(pkl_file, 'rb') as f2:
+        jj = pickle.load(f2)
+    return jj
