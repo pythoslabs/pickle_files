@@ -5,7 +5,7 @@ import pickle
 
 # reading a pickle file 
 def view_meta_file(pkl_file_location):
-    with open(pkl_file, 'rb') as f2:
+    with open(pkl_file_location, 'rb') as f2:
         jj = pickle.load(f2)
     return jj
 
