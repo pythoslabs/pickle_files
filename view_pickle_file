@@ -3,7 +3,14 @@
 
 import pickle 
 
-def view_meta_file(pkl_file):
+# reading a pickle file 
+def view_meta_file(pkl_file_location):
     with open(pkl_file, 'rb') as f2:
         jj = pickle.load(f2)
     return jj
+
+# writing to a pickle file 
+def write_pickle_file(input_file, ppkl_path_to_write) : 
+    with open(ppkl_path_to_write, "wb") as pkl_file_handle:
+        pickle.dump(input_file, pkl_file_handle)
+    
